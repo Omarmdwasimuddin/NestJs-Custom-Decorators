@@ -1,9 +1,3 @@
-## Custom Decorator
-
-##### Create- src/custom.decorator.ts
-
-```bash
-# custom.decorator.ts
 import { createParamDecorator, ExecutionContext } from "@nestjs/common";
 
 export const Custom = createParamDecorator(
@@ -13,5 +7,3 @@ export const Custom = createParamDecorator(
         return `Hello ${data || 'World'}! Your path is: ${request.url}`;
     }
 )
-```
-
